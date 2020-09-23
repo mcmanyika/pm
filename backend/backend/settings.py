@@ -23,10 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!y1@t*&-6!&r_ed7ba640nu=gt2&-jcwzt5@%txknxld)5&t)z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 if DEBUG:
-    ALLOWED_HOSTS = ['206.189.209.0',]
+    ALLOWED_HOSTS = ['206.189.209.0', ]
 else:
     ALLOWED_HOSTS = ['206.189.209.0', 'www.partsonmanyika.com',
                      'partsonmanyika.com']
