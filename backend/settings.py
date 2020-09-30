@@ -26,10 +26,10 @@ SECRET_KEY = '!y1@t*&-6!&r_ed7ba640nu=gt2&-jcwzt5@%txknxld)5&t)z'
 DEBUG = True
 
 if DEBUG:
-    ALLOWED_HOSTS = ['207.154.220.180',
-                     'www.partsonmanyika.cf', 'partsonmanyika.cf']
+    ALLOWED_HOSTS = ['www.partsonmanyika.cf',
+                     'partsonmanyika.cf', '207.154.242.61']
 else:
-    ALLOWED_HOSTS = ['207.154.220.180',
+    ALLOWED_HOSTS = ['207.154.242.61',
                      'www.partsonmanyika.cf', 'partsonmanyika.cf']
 
 
@@ -136,7 +136,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'))
+STATICFILES_DIRS = [(os.path.join(BASE_DIR, 'static'))]
 VENV_PATH = os.path.dirname(BASE_DIR)
 STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static_root')
 MEDIA_ROOT = os.path.join(VENV_PATH, 'static', 'image')
