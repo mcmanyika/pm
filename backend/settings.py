@@ -26,9 +26,9 @@ SECRET_KEY = '!y1@t*&-6!&r_ed7ba640nu=gt2&-jcwzt5@%txknxld)5&t)z'
 DEBUG = False
 
 if DEBUG:
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = ['147.182.189.44','www.partsonmanyika.cf', 'partsonmanyika.cf']
 else:
-    ALLOWED_HOSTS = ['207.154.242.61',
+    ALLOWED_HOSTS = ['147.182.189.44',
                      'www.partsonmanyika.cf', 'partsonmanyika.cf']
 
 
