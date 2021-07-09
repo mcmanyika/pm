@@ -26,10 +26,10 @@ SECRET_KEY = '!y1@t*&-6!&r_ed7ba640nu=gt2&-jcwzt5@%txknxld)5&t)z'
 DEBUG = True
 
 if DEBUG:
-    ALLOWED_HOSTS = ['147.182.177.198','www.partsonmanyika.cf', 'partsonmanyika.cf']
+    ALLOWED_HOSTS = ['147.182.177.198','www.partsonmanyika.com', 'partsonmanyika.com']
 else:
     ALLOWED_HOSTS = ['147.182.177.198',
-                     'www.partsonmanyika.cf', 'partsonmanyika.cf']
+                     'www.partsonmanyika.com', 'partsonmanyika.com']
 
 
 # Application definition
