@@ -26,7 +26,7 @@ SECRET_KEY = '!y1@t*&-6!&r_ed7ba640nu=gt2&-jcwzt5@%txknxld)5&t)z'
 DEBUG = True
 
 if DEBUG:
-    ALLOWED_HOSTS = ['www.partsonmanyika.com', 'partsonmanyika.com']
+    ALLOWED_HOSTS = ['127.0.0.1', 'www.partsonmanyika.com', 'partsonmanyika.com']
 else:
     ALLOWED_HOSTS = [
                      'www.partsonmanyika.com', 'partsonmanyika.com']
@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
+    'rest_framework',
     'libs',
 ]
 
@@ -52,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -135,6 +138,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+    'http://147.182.177.198'
+]
+
 STATICFILES_DIRS = [(os.path.join(BASE_DIR, 'static'))]
 VENV_PATH = os.path.dirname(BASE_DIR)
 STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static_root')

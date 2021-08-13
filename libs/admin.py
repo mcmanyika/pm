@@ -1,6 +1,6 @@
 from django.contrib import admin
-
 from .models import *
+from .models import DeployedTickets
 # Register your models here.
 
 
@@ -32,3 +32,9 @@ class ContactAdmin(admin.ModelAdmin):
 
 
 admin.site.register(t_contact, ContactAdmin)
+
+class TicketsAdmin(admin.ModelAdmin):
+    list_display = ('id', 'accountAddress')
+
+
+admin.site.register(DeployedTickets, TicketsAdmin)

@@ -38,3 +38,11 @@ class t_contact(models.Model):
 
     def __unicode__(self):
         return 't_url {}'.format(self.id)
+
+class DeployedTickets(models.Model):
+    sponser = models.CharField(max_length=80)
+    accountAddress = models.CharField(max_length=80)
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+
+    def _str_(self):
+        return self.accountAddress
