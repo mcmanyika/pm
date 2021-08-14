@@ -141,7 +141,8 @@ STATIC_URL = '/static/'
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    'http://147.182.177.198'
+    'http://147.182.177.198',
+    'https://uluju-c5a90.web.app/'
 ]
 
 STATICFILES_DIRS = [(os.path.join(BASE_DIR, 'static'))]
